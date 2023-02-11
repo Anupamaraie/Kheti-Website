@@ -58,13 +58,13 @@ const Patient = () => {
     },
   ];
   return (
-    <Link to='doctorlistpage'>
-    <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold"> Welcome! You are logged in</h1>
-      <p className="py-5 pb-10">
+    <Link to='Pharmacypage'>
+    <Section id="destinations" className="max-w-[1000px] mx-auto py-24 px-4 text-center">
+        <h1 className="text-5xl my-6"> Use Our Services</h1> 
+      {/* <p className="py-5 pb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
         facere sed nobis maiores, illo ratione?
-      </p>
+      </p>  */}
       <div className="destinations">
         {data.map((destination) => {
           return (
@@ -72,18 +72,18 @@ const Patient = () => {
               <img src={destination.image} alt="" />
               <h3>{destination.title}</h3>
               <p>{destination.subTitle}</p>
-              <div className="info">
-                <div className="services">
+              {/* <div className="info"> */}
+                {/* <div className="services"> */}
                   {/* <img src={info1} alt="" /> */}
-                  <img src={info2} alt="" />
-                  <img src={info3} alt="" />
-                </div>
-                <h4>{destination.cost}</h4>
-              </div>
-              <div className="distance">
-                <span>100+ doctors</span>
-                <span>{destination.duration}</span>
-              </div>
+                  {/* <img src={info2} alt="" />
+                  <img src={info3} alt="" /> */}
+                {/* </div> */}
+                {/* <h4>{destination.cost}</h4> */}
+              {/* </div> */}
+              {/* <div className="distance"> */}
+                {/* <span>100+ doctors</span> */}
+                {/* <span>{destination.duration}</span> */}
+              {/* </div> */}
             </div>
           );
         })}

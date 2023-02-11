@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Cardpic1 from "../assets/covid1.png";
-import Cardpic2 from "../assets/dengue1.png";
-// import Cardpic3 from "../assets/pregtest1.png";
+import Cardpic1 from "../assets/tomato.png";
+import Cardpic2 from "../assets/potato.jpg";
+import Cardpic3 from "../assets/strawberry.jpg";
 
 
 
@@ -11,23 +11,23 @@ const Aihelper = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "AI Covid Tester ",
-      subTitle: "This is an AI covid testing model based on a neural network. It takes over 20 or more inputs from the user regarding symptoms of the virus and gives the user the probabilty of him/her having Covid.",
+      title: "AI Tomato Disease Predictor ",
+      subTitle: "This is an AI tomato disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
     },
     {
       image: Cardpic2,
-      title: "AI Dengue Tester ",
-      subTitle: "This is an AI covid testing model based on a neural network. It takes over 20 or more inputs from the user regarding symptoms of the virus and gives the user the probabilty of him/her having Covid.",
+      title: "AI Potato Disease Predictor ",
+      subTitle: "This is an AI potato disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
     },
     {
-        image: Cardpic1,
-        title: "AI Covid Tester ",
-        subTitle: "This is an AI covid testing model based on a neural network. It takes over 20 or more inputs from the user regarding symptoms of the virus and gives the user the probabilty of him/her having Covid.",
+        image: Cardpic3,
+        title: "AI Strawberry Disease Predictor ",
+      subTitle: "This is an AI strawberry disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
       },
   ];
   return (
-    <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold">AI-based tools</h1>
+    <Section id="destinations" className="max-w-[1000px] mx-auto py-18 px-2 text-center">
+      <h1 className="text-6xl font-bold">AI-based disease predictors</h1>
       <p className="py-5 pb-10">
         Try our AI based models.
       </p>
@@ -40,7 +40,7 @@ const Aihelper = () => {
               <p>{destination.subTitle}</p>
               <div className="priceandcart flex flex-col items-center justify-center">
                 {/* <h1>{destination.cost}</h1> */}
-                <button className="py-3 px-6 w-full sm:w-[60%] my-3">Launch Tool</button>
+                <button className="py-3 px-6 w-full sm:w-[60%] my-3">Use Model</button>
               </div>
             </div>
           );
@@ -102,7 +102,7 @@ const Section = styled.section`
       ul {
         li {
           padding: 0 0.5rem;
-          font-size: 2vh;
+          font-size: 0vh;
           padding-bottom: 1rem;
         }
         .active {

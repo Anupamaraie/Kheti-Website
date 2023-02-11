@@ -47,7 +47,7 @@ const Pharmacy = () => {
     },
   ];
   return (
-    <Link to='doctorlistpage'>
+    <Link to='Pharmacypage'>
     <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
       <h1 className="text-6xl font-bold"> ePharmacy</h1>
       <p className="py-5 pb-10">
