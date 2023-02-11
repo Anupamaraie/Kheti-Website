@@ -19,7 +19,7 @@ const Hero = () => {
                 {/* <button className='py-3 px-6 sm:w-[60%] my-4'><Link to='patientpage'>Get medicated</Link></button> */}
             </div>
             <div>
-                <img className='w-full h-full hover:scale-100 transition-transform' src={bgImg} alt="/" />
+                <img className='w-full h-full hover:scale-100 transition-transform rounded-lg' src={bgImg} alt="/" />
             </div>
             {/* <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
              mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200

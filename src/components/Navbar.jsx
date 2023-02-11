@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 // import { Link, animateScroll as scroll, } from 'react-scroll'
 import { Link} from 'react-router-dom'
+import logo from "../assets/logo.png"
 
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -16,6 +17,7 @@ const Navbar = () => {
     <div className='w-screen h-[60px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
+        <img src={logo} alt="img" class="w-10 pr-1 pt-1 rounded-lg"></img>
           <Link to='/'>
             {/* <h1 className='text-3xl font-bold font-sans -sm:text-4xl'>Kheti</h1> */}
           </Link>
