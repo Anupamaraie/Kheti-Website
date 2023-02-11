@@ -39,7 +39,7 @@ const Services = () => {
                       <h3 className='font-bold text-2xl my-6'>Regional Guide</h3>
                       <p className='text-gray-600 text-xl'>This section gives the regional guide to which plant is suitable for which region of nepal.</p>
                   </div>
-                  <Link to = "">
+                  <Link to = "/rguide">
                   <div className='bg-slate-100 pl-8 py-4'>
                       <p className='flex items-center text-green-700'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>

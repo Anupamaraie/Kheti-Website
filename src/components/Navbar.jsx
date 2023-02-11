@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 // import { Link, animateScroll as scroll, } from 'react-scroll'
 import { Link} from 'react-router-dom'
 import logo from "../assets/logo.png"
-
+import profile from "../assets/profile.png"
+import bell from "../assets/bell.png"
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
@@ -24,21 +25,25 @@ const Navbar = () => {
           <ul className='hidden md:flex'>
           <li><a href='/#heroid' className='hover: bg-transparent-700'>Home</a></li>
           {/* <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li> */}
-          <li><a href="/#allinoneid">About</a></li>
+          <li><Link to = "consultantpage">Information</Link></li>
           {/* <li><Link to="patientpage" smooth={true} offset={-50} duration={500}>Services</Link></li> */}
-          <li><a href="/#servicesid">Services</a></li>
+          <li><Link to = "servpage">Services</Link></li>
           {/* <li><Link to="platforms" smooth={true} offset={-100} duration={500}>Packages</Link></li> */}
           <li><a href="/#pricingid">E-commerce</a></li>
           <li><Link to="">News</Link></li>
           </ul>
         </div>
         <div className='hidden md:flex pr-2'>
-        <a href='https://login-signup-production.up.railway.app/signin' className='px-2'>
+        {/* <a href='https://login-signup-production.up.railway.app/signin' className='px-2'>
             <button className='border-none bg-transparent text-black mr-4 pt-2'>Sign In </button>
           </a>
           <a href='https://login-signup-production.up.railway.app/signup'>
             <button className='px-5 py-2 rounded-lg'>Sign Up</button>
-          </a>
+          </a> */}
+          
+          <img src={bell} alt="img" class="w-10 pr-5 pt-1 rounded-lg"></img>
+          <img src={profile} alt="img" class="w-10 pr-5 pt-1 rounded-lg"></img>
+          
         </div>
         <div className='md:hidden mr-4' onClick={handleClick}>
             {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}

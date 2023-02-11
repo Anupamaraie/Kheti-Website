@@ -11,6 +11,7 @@ import Consultantpage from "./pages/Consultantpage";
 import Hybridpage from "./pages/Hybridpage";
 import Hybridseeds from "./components/Hybridseeds";
 import Aihelperpage from "./pages/Aihelperpage";
+import RGuidepage from "./pages/RGuidepage";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path='/hybridpage' element={<Hybridpage />} />
         <Route path='/servpage' element={<Servpage />} />
         <Route path='/aihelper' element={<Aihelperpage />} />
+        <Route path='/rguide' element={<RGuidepage />} />
+        <Route path='/consultantpage' element={<Consultantpage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

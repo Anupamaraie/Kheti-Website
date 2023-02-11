@@ -1,47 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import Cardpic1 from "../assets/doctor2.png";
+import Cardpic1 from "../assets/cs1.png";
+import Cardpic2 from "../assets/cs2.png";
+import Cardpic3 from "../assets/cs3.png";
 // import { Link} from 'react-router-dom';
 
 const Consultants = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "Dr. John Doe",
-      subTitle: "Bone and Joint specialist",
+      title: "Brian Des",
+      subTitle: "Agriculture specialist",
     },
     {
-      image: Cardpic1,
-      title: "Dr. Monkey D Luffy",
-      subTitle: "Child health expert",
+      image: Cardpic2,
+      title: "Alphe Leha",
+      subTitle: "Terrace Farming expert",
     },
     {
-      image: Cardpic1,
-      title: "Dr. Dattebayo",
-      subTitle: "Gynecologist",
-    },
-    {
-      image: Cardpic1,
-      title: "Dr.Yamete Kudasai",
-      subTitle: "Cardiac",
-    },
-    {
-      image: Cardpic1,
-      title: "Dr.Oggy",
-      subTitle: "ENT specialist",
-    },
-    {
-      image: Cardpic1,
-      title: "Dr. Sishimanu",
-      subTitle: "General Physician",
+      image: Cardpic3,
+      title: "Henna Fernandez",
+      subTitle: "PHd in Farming",
     },
   ];
   return (
-    <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold"> Meet our top doctors</h1>
+    <Section id="destinations" className="max-w-[900px] mx-auto py-24 px-2 text-center">
+      <h1 className="text-4xl font-bold"> Meet our top consultants</h1>
       <p className="py-5 pb-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        facere sed nobis maiores, illo ratione?
+        These experts each have knowledge in their fields and can provide the best advice to you according to your requirements.
       </p>
       <div className="destinations">
         {data.map((destination) => {
@@ -51,8 +37,7 @@ const Consultants = () => {
               <h3 className="font-extrabold text-xl">{destination.title}</h3>
               <p>{destination.subTitle}</p>
               <div className="callandchat flex flex-col items-center justify-center">
-                    <button className="py-3 px-6 w-full sm:w-[60%] mt-3 mb-1" ><a href="https://us05web.zoom.us/j/83718627547?pwd=dFFObDRuenpZaE85eWNxSmYrNDZWdz09">Call</a></button>
-                    <button className="py-3 px-6 w-full sm:w-[60%] mb-3" >Chat</button>
+                    <button className="py-3 px-6 w-full sm:w-[60%] mt-2 mb-1 rounded-lg" >Message</button>
               </div>
             </div>
           );

@@ -1,7 +1,7 @@
 import React from "react";
-import RGuide from '../components/Aihelper'
+import RGuide from '../components/RGuide'
 
-const RGuiepage = () => {
+const RGuidepage = () => {
     return (
         <>
 
@@ -10,3 +10,4 @@ const RGuiepage = () => {
         </>
     )
 }
+export default RGuidepage

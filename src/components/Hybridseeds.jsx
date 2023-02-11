@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Cardpic1 from "../assets/meds1.png";
 import Cardpic2 from "../assets/meds1.png";
 import Cardpic3 from "../assets/meds1.png";
+import Cardpic4 from "../assets/meds1.png";
+import Cardpic5 from "../assets/meds1.png";
 
 
 import { Link} from 'react-router-dom'
@@ -25,18 +27,18 @@ const Hybridseeds = () => {
       cost: "Rs.50 per pack",
     },
     {
-      image: Cardpic1,
+      image: Cardpic4,
       title: "Brinjal plant",
       cost: "Rs.250",
     },
     {
-      image: Cardpic2,
+      image: Cardpic5,
       title: "Coriander seeds",
       cost: "Rs.50",
     },
     {
       image: Cardpic3,
-      title: "Gourd seeds",
+      title: "Onion seeds",
       cost: "Rs.150 per pack",
     },
   ];

@@ -1,46 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import Cardpic1 from "../assets/tomato.png";
-import Cardpic2 from "../assets/potato.jpg";
-import Cardpic3 from "../assets/strawberry.jpg";
+import Cardpic1 from "../assets/rt1.png";
+import Cardpic2 from "../assets/rf2.png";
+import Cardpic3 from "../assets/rf3.png";
+import Cardpic4 from "../assets/rf4.png";
+import Cardpic5 from "../assets/rf5.png";
+import Cardpic6 from "../assets/rf6.png";
+// import { Link} from 'react-router-dom';
 
-
-
-
-const Aihelper = () => {
+const Rooftops = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "AI Tomato Disease Predictor ",
-      subTitle: "This is an AI tomato disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
     },
     {
       image: Cardpic2,
-      title: "AI Potato Disease Predictor ",
-      subTitle: "This is an AI potato disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
     },
     {
-        image: Cardpic3,
-        title: "AI Strawberry Disease Predictor ",
-      subTitle: "This is an AI strawberry disease predictor model based on a neural network. It takes an image as an input from the user of the leaves of the plant and gives user the possibility of having any specific disease based on what the picture looks like.",
+      image: Cardpic3,
+    },
+    {
+        image: Cardpic4,
+      },
+      {
+        image: Cardpic5,
+      },
+      {
+        image: Cardpic6,
+
       },
   ];
   return (
-    <Section id="destinations" className="w-[1280px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-4xl font-bold">AI-based disease predictors</h1>
+    <Section id="destinations" className="max-w-[900px] mx-auto py-24 px-2 text-center">
+      <h1 className="text-4xl font-bold"> Types of Rooftops</h1>
       <p className="py-5 pb-10">
-        Try our AI based models.
+        Identify your type and click on the pictures to know more.
       </p>
       <div className="destinations">
         {data.map((destination) => {
           return (
             <div className="destination">
-              <img src={destination.image} alt="" />
-              <h3 className="font-bold text-xl">{destination.title}</h3>
-              <p>{destination.subTitle}</p>
-              <div className="priceandcart flex flex-col items-center justify-center">
-                <button className="py-3 px-6 w-full sm:w-[60%] my-3 rounded-lg">Use Model</button>
-              </div>
+              <a href="https://drive.google.com/file/d/1mAK0F2gDQA3b8lEAaQgeyPViGQXs-M1F/view?usp=sharing"><img src={destination.image} alt="" /></a>
             </div>
           );
         })}
@@ -51,7 +51,7 @@ const Aihelper = () => {
   );
 };
 
-export default Aihelper;
+export default Rooftops;
 const Section = styled.section`
 .destinations {
     display: grid;
@@ -101,7 +101,7 @@ const Section = styled.section`
       ul {
         li {
           padding: 0 0.5rem;
-          font-size: 0vh;
+          font-size: 2vh;
           padding-bottom: 1rem;
         }
         .active {
