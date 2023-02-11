@@ -26,8 +26,8 @@ const Aihelper = () => {
       },
   ];
   return (
-    <Section id="destinations" className="max-w-[1000px] mx-auto py-18 px-2 text-center">
-      <h1 className="text-6xl font-bold">AI-based disease predictors</h1>
+    <Section id="destinations" className="max-w-[1000px] mx-auto py-24 px-2 text-center">
+      <h1 className="text-4xl font-bold">AI-based disease predictors</h1>
       <p className="py-5 pb-10">
         Try our AI based models.
       </p>

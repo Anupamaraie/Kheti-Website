@@ -16,50 +16,36 @@ const Patient = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "Bone and Joint",
-      subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
+      title: "E-commerce",
+      subTitle: "\n\nYour online market for buying any rooftop farming products.",
+
     },
     {
       image: Cardpic2,
-      title: "Child health",
+      title: "",
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
+
     },
     {
       image: Cardpic3,
       title: "Gynecologist",
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
+  
     },
     {
       image: Cardpic4,
       title: "Cardiac",
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
     },
     {
       image: Cardpic5,
       title: "ENT services",
       subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet ",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
-    },
-    {
-      image: Cardpic6,
-      title: "General",
-      subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      cost: "From Rs.5000",
-      duration: "Online and pyshical",
     },
   ];
   return (
     <Link to='Pharmacypage'>
-    <Section id="destinations" className="max-w-[1000px] mx-auto py-24 px-4 text-center">
+    <Section id="destinations" className="max-w-[1000px] mx-auto py-12 px-4 text-center">
         <h1 className="text-5xl my-6"> Use Our Services</h1> 
       {/* <p className="py-5 pb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos

@@ -22,29 +22,29 @@ const Pricing = () => {
 
         <div className='grid md:grid-cols-2'>
 
-        <div className='bg-white text-slate-900 m-4 p-5 rounded-xl shadow-2xl relative h-[550px]'>
+        <div className='bg-white text-slate-900 m-4 p-5 rounded-xl shadow-2xl relative h-[450px]'>
             {/* <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Premium</span> */}
             <div>
-              <p className='text-4xl font-bold py-2 flex'>Hybrid Plants<span className='text-xl text-slate-500 flex flex-col justify-end'></span></p>
+              <p className='text-4xl font-bold py-0 flex'>Hybrid Plants<span className='text-xl text-slate-500 flex flex-col justify-end'></span></p>
             </div>
-            <p className='text-2xl py-8 text-slate-500'>Get the appropriate tools for rooftop farming of any type.</p>
+            <p className='text-2xl py-2 text-slate-500'>Get the appropriate tools for rooftop farming of any type.</p>
             <div className='text-2xl'>
-                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Hybrid apple</p>
-                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Hybrid orange</p>
-                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Hybrid lemon</p>
-                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Hybrid mango</p>
-                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Hybrid strawberry</p>
+                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Apple plant</p>
+                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Orange seeds</p>
+                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Lemon seeds</p>
+                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Mango plant</p>
+                <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Strawberry plants</p>
                 <Link to="pharmacy">
-                <button className='w-full py-4 my-4'>Read More</button>
+                <button className='w-full py-2 my-1'>Read More</button>
                 </Link>
             </div>
           </div>
-          <div className='bg-white text-slate-900 m-4 p-5 rounded-xl shadow-2xl relative h-[550px]'>
+          <div className='bg-white text-slate-900 m-4 p-5 rounded-xl shadow-2xl relative h-[450px]'>
             {/* <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Premium</span> */}
             <div>
-              <p className='text-4xl font-bold py-2 flex'>Agricultural tools<span className='text-xl text-slate-500 flex flex-col justify-end'></span></p>
+              <p className='text-4xl font-bold py-0 flex'>Agricultural tools<span className='text-xl text-slate-500 flex flex-col justify-end'></span></p>
             </div>
-            <p className='text-2xl py-8 text-slate-500'>Get the appropriate tools for rooftop farming of any type.</p>
+            <p className='text-2xl py-2 text-slate-500'>Get the appropriate tools for rooftop farming of any type.</p>
             <div className='text-2xl'>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Compost bin</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Seed Drill</p>
@@ -52,7 +52,7 @@ const Pricing = () => {
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Water Can</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Soil</p>
                 <Link to="pharmacy">
-                <button className='w-full py-4 my-4'>Read More</button>
+                <button className='w-full py-2 my-1'>Read More</button>
                 </Link>
             </div>
           </div>

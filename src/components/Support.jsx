@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { PhoneIcon, ArrowSmRightIcon } from '@heroicons/react/outline';
 import {ChipIcon, SupportIcon} from '@heroicons/react/solid'
@@ -26,9 +27,11 @@ const Support = () => {
                       <h3 className='font-bold text-2xl my-6'>AI Predictor</h3>
                       <p className='text-gray-600 text-xl'> This section predicts the kind of disease for a plant and help them get the best treatment.</p>
                   </div>
+                  <Link to = "aihelper">
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-indigo-600'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-green-700'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
+                  </Link>
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
@@ -36,9 +39,11 @@ const Support = () => {
                       <h3 className='font-bold text-2xl my-6'>Regional Guide</h3>
                       <p className='text-gray-600 text-xl'>This section gives the regional guide to which plant is suitable for which region of nepal.</p>
                   </div>
+                  <Link to = "">
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-indigo-600'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-green-700'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
+                  </Link>
               </div>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
@@ -46,9 +51,11 @@ const Support = () => {
                       <h3 className='font-bold text-2xl my-6'>News</h3>
                       <p className='text-gray-600 text-xl'>This section provides News if any free or rare distribution of plants is happening.</p>
                   </div>
+                  <Link to = "">
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-indigo-600'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-green-700'>Read More<ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
+                  </Link>
               </div>
     
           </div>

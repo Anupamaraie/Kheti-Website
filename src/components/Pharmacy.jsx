@@ -12,46 +12,40 @@ const Pharmacy = () => {
     {
       image: Cardpic1,
       title: "ALIC FACE WASH 100ML",
-      subTitle: "KERATOLYTIC AGENT",
       cost: "Rs.450",
     },
     {
       image: Cardpic2,
       title: "ECOSPRIN-75MG",
-      subTitle: "DRUGS AFFECTING BLOOD AND BLOOD",
       cost: "Rs.10/tab",
     },
     {
       image: Cardpic3,
       title: "FORTIPLEX CAP",
-      subTitle: "VITAMIN AND MINERALS",
       cost: "Rs.50 per pack",
     },
     {
       image: Cardpic1,
       title: "RETIDERM-0.025% GEL-20G.",
-      subTitle: "RETINOIDS",
       cost: "Rs.250",
     },
     {
       image: Cardpic2,
       title: "AMLOD-5MG",
-      subTitle: "CALCIUM CHANNEL BLOCKERS",
       cost: "Rs.200",
     },
     {
       image: Cardpic3,
       title: "FORTIPLEX CAP",
-      subTitle: "VITAMIN AND MINERALS",
       cost: "Rs.10/tab",
     },
   ];
   return (
     <Link to='Pharmacypage'>
     <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold"> ePharmacy</h1>
+      <h1 className="text-6xl font-bold"> Hybrid Seeds</h1>
       <p className="py-5 pb-10">
-        Choose from the list meds you want and have 'em delivered to your doorsteps right away.
+        Choose the required seeds from categories below.
       </p>
       <div className="destinations">
         {data.map((destination) => {
@@ -59,12 +53,11 @@ const Pharmacy = () => {
             <div className="destination">
               <img src={destination.image} alt="" />
               <h3 className="font-bold text-xl">{destination.title}</h3>
-              <p>{destination.subTitle}</p>
               <div className="priceandcart flex flex-col items-center justify-center">
-                <h1>{destination.cost}</h1>
+              <h4>{destination.cost}</h4>
                 <button className="py-3 px-6 w-full sm:w-[60%] my-3">Add to cart</button>
               </div>
-            </div>
+              </div>
           );
         })}
       </div>
