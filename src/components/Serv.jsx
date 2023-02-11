@@ -44,7 +44,7 @@ const Patient = () => {
     },
   ];
   return (
-    <Link to='Pharmacypage'>
+    <Link to='hybridpage'>
     <Section id="destinations" className="max-w-[1000px] mx-auto py-12 px-4 text-center">
         <h1 className="text-5xl my-6"> Use Our Services</h1> 
       {/* <p className="py-5 pb-10">

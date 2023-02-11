@@ -1,14 +1,14 @@
 import React from 'react'
 import Aihelper from '../components/Aihelper'
-import Patient from '../components/Patient'
+import Serv from '../components/Serv'
 
-const Patientpage = () => {
+const Servpage = () => {
   return (
     <>
-        <Patient />
+        <Serv />
         <Aihelper />
     </>
   )
 }
 
-export default Patientpage
+export default Servpage

@@ -1,60 +1,62 @@
 import React from "react";
 import styled from "styled-components";
-import Cardpic1 from "../assets/doctor2.png";
-// import { Link} from 'react-router-dom';
+import Cardpic1 from "../assets/meds1.png";
+import Cardpic2 from "../assets/meds1.png";
+import Cardpic3 from "../assets/meds1.png";
 
-const Doctorlist = () => {
+
+import { Link} from 'react-router-dom'
+
+const Hybridseeds = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "Dr. John Doe",
-      subTitle: "Bone and Joint specialist",
+      title: "Hybrid apple",
+      cost: "Rs.450",
+    },
+    {
+      image: Cardpic2,
+      title: "Ladyfinger seeds",
+      cost: "Rs. 250",
+    },
+    {
+      image: Cardpic3,
+      title: "Bean seeds",
+      cost: "Rs.50 per pack",
     },
     {
       image: Cardpic1,
-      title: "Dr. Monkey D Luffy",
-      subTitle: "Child health expert",
+      title: "Brinjal plant",
+      cost: "Rs.250",
     },
     {
-      image: Cardpic1,
-      title: "Dr. Dattebayo",
-      subTitle: "Gynecologist",
+      image: Cardpic2,
+      title: "Coriander seeds",
+      cost: "Rs.50",
     },
     {
-      image: Cardpic1,
-      title: "Dr.Yamete Kudasai",
-      subTitle: "Cardiac",
-    },
-    {
-      image: Cardpic1,
-      title: "Dr.Oggy",
-      subTitle: "ENT specialist",
-    },
-    {
-      image: Cardpic1,
-      title: "Dr. Sishimanu",
-      subTitle: "General Physician",
+      image: Cardpic3,
+      title: "Gourd seeds",
+      cost: "Rs.150 per pack",
     },
   ];
   return (
-    <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold"> Meet our top doctors</h1>
+    <Section id="destinations" className="max-w-[900px] mx-auto py-24 px-4 text-center">
+      <h1 className="text-6xl font-bold"> Hybrid Seeds</h1>
       <p className="py-5 pb-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        facere sed nobis maiores, illo ratione?
+        Choose the required seeds from categories below.
       </p>
       <div className="destinations">
         {data.map((destination) => {
           return (
             <div className="destination">
               <img src={destination.image} alt="" />
-              <h3 className="font-extrabold text-xl">{destination.title}</h3>
-              <p>{destination.subTitle}</p>
-              <div className="callandchat flex flex-col items-center justify-center">
-                    <button className="py-3 px-6 w-full sm:w-[60%] mt-3 mb-1" ><a href="https://us05web.zoom.us/j/83718627547?pwd=dFFObDRuenpZaE85eWNxSmYrNDZWdz09">Call</a></button>
-                    <button className="py-3 px-6 w-full sm:w-[60%] mb-3" >Chat</button>
+              <h3 className="font-bold text-xl">{destination.title}</h3>
+              <div className="priceandcart flex flex-col items-center justify-center">
+              <h4>{destination.cost}</h4>
+                <button className="py-3 px-6 w-full sm:w-[70%] my-3 rounded-lg">Add to cart</button>
               </div>
-            </div>
+              </div>
           );
         })}
       </div>
@@ -64,7 +66,7 @@ const Doctorlist = () => {
   );
 };
 
-export default Doctorlist;
+export default Hybridseeds;
 const Section = styled.section`
 .destinations {
     display: grid;

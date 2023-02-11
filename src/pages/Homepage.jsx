@@ -1,15 +1,15 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Home from '../components/Home'
 import About from '../components/About'
-import Support from '../components/Support'
+import Services from '../components/Services'
 import AllInOne from '../components/AllInOne'
 import Pricing from '../components/Pricing'
 
 const Homepage = () => {
   return (
     <>
-        <Hero />
-        <Support />
+        <Home />
+        <Services />
         <AllInOne />
         <Pricing />
     </>

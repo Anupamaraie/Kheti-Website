@@ -26,7 +26,7 @@ const Aihelper = () => {
       },
   ];
   return (
-    <Section id="destinations" className="max-w-[1000px] mx-auto py-24 px-2 text-center">
+    <Section id="destinations" className="w-[1280px] mx-auto py-24 px-2 text-center">
       <h1 className="text-4xl font-bold">AI-based disease predictors</h1>
       <p className="py-5 pb-10">
         Try our AI based models.
@@ -40,7 +40,7 @@ const Aihelper = () => {
               <p>{destination.subTitle}</p>
               <div className="priceandcart flex flex-col items-center justify-center">
                 {/* <h1>{destination.cost}</h1> */}
-                <button className="py-3 px-6 w-full sm:w-[60%] my-3">Use Model</button>
+                <button className="py-3 px-6 w-full sm:w-[60%] my-3 rounded-lg">Use Model</button>
               </div>
             </div>
           );

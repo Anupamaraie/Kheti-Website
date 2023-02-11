@@ -29,7 +29,7 @@ const Navbar = () => {
           <li><a href="/#servicesid">Services</a></li>
           {/* <li><Link to="platforms" smooth={true} offset={-100} duration={500}>Packages</Link></li> */}
           <li><a href="/#pricingid">E-commerce</a></li>
-          <li><Link to="pharmacy">News</Link></li>
+          <li><Link to="">News</Link></li>
           </ul>
         </div>
         <div className='hidden md:flex pr-2'>

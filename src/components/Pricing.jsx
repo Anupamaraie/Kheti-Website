@@ -34,8 +34,8 @@ const Pricing = () => {
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Lemon seeds</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Mango plant</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Strawberry plants</p>
-                <Link to="pharmacy">
-                <button className='w-full py-2 my-1'>Read More</button>
+                <Link to="hybridpage">
+                <button className='w-full py-1 my-1 rounded-lg'>Read More</button>
                 </Link>
             </div>
           </div>
@@ -51,8 +51,8 @@ const Pricing = () => {
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Coco pit</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Water Can</p>
                 <p className='flex py-2'><CheckIcon className='w-8 mr-5 text-green-600'  />Soil</p>
-                <Link to="pharmacy">
-                <button className='w-full py-2 my-1'>Read More</button>
+                <Link to="hybridpage">
+                <button className='w-full py-1 my-1 rounded-lg'>Read More</button>
                 </Link>
             </div>
           </div>

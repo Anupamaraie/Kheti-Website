@@ -6,13 +6,11 @@ import {
 import Footer from './components/Footer';
 import Navbar from './components/Navbar'
 import Homepage from "./pages/Homepage";
-import Patientpage from "./pages/Patientpage";
-import Doctorlistpage from "./pages/Doctorlistpage";
-import Pharmacypage from "./pages/Pharmacypage";
-import Pharmacy from "./components/Pharmacy";
+import Servpage from "./pages/Servpage";
+import Consultantpage from "./pages/Consultantpage";
+import Hybridpage from "./pages/Hybridpage";
+import Hybridseeds from "./components/Hybridseeds";
 import Aihelperpage from "./pages/Aihelperpage";
-// import Chatpage from "./pages/Chatpage";
-// import Signuppage from "./pages/Signuppage";
 
 function App() {
   return (
@@ -21,11 +19,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/pharmacy' element={<Pharmacypage />} />
-        {/* <Route path='/chat' element={<Chatpage />} /> */}
-        {/* <Route path='/signuppage' element={<Signuppage />} /> */}
-        <Route path='/patientpage' element={<Patientpage />} />
-        <Route path='/patientpage/Pharmacypage' element={<Pharmacypage />} />
+        <Route path='/hybridpage' element={<Hybridpage />} />
+        <Route path='/servpage' element={<Servpage />} />
         <Route path='/aihelper' element={<Aihelperpage />} />
       </Routes>
       <Footer />

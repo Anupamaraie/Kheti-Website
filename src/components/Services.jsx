@@ -6,7 +6,7 @@ import {ChipIcon, SupportIcon} from '@heroicons/react/solid'
 
 import supportImg from '../assets/services.jpg'
 
-const Support = () => {
+const Services = () => {
   return (
   <div id='servicesid' name='support' className='w-full mt-24'>
       <div className='w-full h-[700px] bg-gray-900/90 absolute'>
@@ -64,4 +64,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Services;

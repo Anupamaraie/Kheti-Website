@@ -1,74 +1,70 @@
 import React from "react";
 import styled from "styled-components";
-import Cardpic1 from "../assets/meds1.png";
-import Cardpic2 from "../assets/meds2.png";
-import Cardpic3 from "../assets/meds3.png";
+import Cardpic1 from "../assets/doctor2.png";
+// import { Link} from 'react-router-dom';
 
-
-import { Link} from 'react-router-dom'
-
-const Pharmacy = () => {
+const Consultants = () => {
   const data = [
     {
       image: Cardpic1,
-      title: "ALIC FACE WASH 100ML",
-      cost: "Rs.450",
-    },
-    {
-      image: Cardpic2,
-      title: "ECOSPRIN-75MG",
-      cost: "Rs.10/tab",
-    },
-    {
-      image: Cardpic3,
-      title: "FORTIPLEX CAP",
-      cost: "Rs.50 per pack",
+      title: "Dr. John Doe",
+      subTitle: "Bone and Joint specialist",
     },
     {
       image: Cardpic1,
-      title: "RETIDERM-0.025% GEL-20G.",
-      cost: "Rs.250",
+      title: "Dr. Monkey D Luffy",
+      subTitle: "Child health expert",
     },
     {
-      image: Cardpic2,
-      title: "AMLOD-5MG",
-      cost: "Rs.200",
+      image: Cardpic1,
+      title: "Dr. Dattebayo",
+      subTitle: "Gynecologist",
     },
     {
-      image: Cardpic3,
-      title: "FORTIPLEX CAP",
-      cost: "Rs.10/tab",
+      image: Cardpic1,
+      title: "Dr.Yamete Kudasai",
+      subTitle: "Cardiac",
+    },
+    {
+      image: Cardpic1,
+      title: "Dr.Oggy",
+      subTitle: "ENT specialist",
+    },
+    {
+      image: Cardpic1,
+      title: "Dr. Sishimanu",
+      subTitle: "General Physician",
     },
   ];
   return (
-    <Link to='Pharmacypage'>
     <Section id="destinations" className="max-w-[1240px] mx-auto py-24 px-4 text-center">
-      <h1 className="text-6xl font-bold"> Hybrid Seeds</h1>
+      <h1 className="text-6xl font-bold"> Meet our top doctors</h1>
       <p className="py-5 pb-10">
-        Choose the required seeds from categories below.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        facere sed nobis maiores, illo ratione?
       </p>
       <div className="destinations">
         {data.map((destination) => {
           return (
             <div className="destination">
               <img src={destination.image} alt="" />
-              <h3 className="font-bold text-xl">{destination.title}</h3>
-              <div className="priceandcart flex flex-col items-center justify-center">
-              <h4>{destination.cost}</h4>
-                <button className="py-3 px-6 w-full sm:w-[60%] my-3">Add to cart</button>
+              <h3 className="font-extrabold text-xl">{destination.title}</h3>
+              <p>{destination.subTitle}</p>
+              <div className="callandchat flex flex-col items-center justify-center">
+                    <button className="py-3 px-6 w-full sm:w-[60%] mt-3 mb-1" ><a href="https://us05web.zoom.us/j/83718627547?pwd=dFFObDRuenpZaE85eWNxSmYrNDZWdz09">Call</a></button>
+                    <button className="py-3 px-6 w-full sm:w-[60%] mb-3" >Chat</button>
               </div>
-              </div>
+            </div>
           );
         })}
       </div>
       <div id='destinationsLast' className="h-0">{/* this is created so that navbar doesnot covers content of section following this div, which is explore section in this case  */}
       </div>
     </Section>
-    </Link>
   );
 };
 
-export default Pharmacy;
+export default Consultants;
 const Section = styled.section`
 .destinations {
     display: grid;
