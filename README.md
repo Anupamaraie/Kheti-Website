@@ -1,6 +1,7 @@
 This is the project for "Team SheCodes" in Nepal's All female Hackathon, Hacking for Humanity. Our idea is based on agriculture sector and focuses on rooftop farming in urban areas of Nepal, which has become one of the hot topics since lockdown. 
 
 Website link: https://master--khetiwebsite.netlify.app
+Plant Disease Classification: https://github.com/Anupamaraie/Plant-Disease-Classification
 
 #Problems/Why Rooftop Farming?
 
